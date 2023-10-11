@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Houseplant Hub</title>
+        <meta name="name" content="Prof. Barnett">
+        <meta name="description" content="More practice for students in GIT215 with CSS Flexbox and Grid styles on a webpage. This is a site for a fake plant store.">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <!-- Web Fonts -->
+        <link rel="stylesheet" href="https://use.typekit.net/zer5nbh.css">
+
+        <!-- Custom Stylesheet -->
+        <!-- TO DO - ADD LINK TO STYLESHEET -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body id="top">
+        <header>
+            <h1><a href="#">Houseplant Hub</a></h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#top">
+                            <svg width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m46.625 29.293s-33.18-20.887-28.656 15.805c0.40234 3.25 15.488-13.707 23.902-6.2266 3.25 2.8945-14.289 2.1641-18.453 5.4766-4.1641 3.3086-7.7422 8.5859 12.301 21.832 1.3125 0.86719 8.9023-18.805 14.02-14.488 3.7969 3.1992-13.531 10.098-10.934 17.441 0.41016 1.1602 6.5781 3.6172 8.0039 5.0898 1.4258 1.4766 1.9727-6.9414 9.6133-9.2812 2.5195-0.76953-6.3789 10.668-6.3789 10.668s11.445 1.5273 17.84 15.77c0 0 2.6836-14.68 5.625-17.773 1.3555-1.4258-9.7344-6.1484-8.1992-7.7539 2.4688-2.5742 10.492 4.3477 10.609 4.5938 0.11719 0.24609-0.89844-8.3398 3.4961-13.465 0.59375-0.6875-6.0547-5.9023-9.9492-7.6016-3.8945-1.6992-9.5234-1.0117-9.2578-2.5781 0.26953-1.5664 7.7422-0.71094 10.066 1.082 2.3242 1.7891 7.7891 6.8398 8.9688 5.1055 1.1797-1.7305-0.67578-10.352 0.65625-17.016 0.53125-2.6484-14.57-7.082-20.715-3.2617-0.70703 0.44141-2.7148-0.10938-2.3438-0.70703s4.1641-3.4297 7.9648-3.0625c3.7969 0.36719 12.629-0.44141 14.938 2.3125 2.3086 2.7578-6.6094-26.516-23.039-18.82-5.9688 2.8008-5.3867 10.902-10.078 16.859z" />
+                            </svg>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#plants">
+                            <svg width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m46.625 29.293s-33.18-20.887-28.656 15.805c0.40234 3.25 15.488-13.707 23.902-6.2266 3.25 2.8945-14.289 2.1641-18.453 5.4766-4.1641 3.3086-7.7422 8.5859 12.301 21.832 1.3125 0.86719 8.9023-18.805 14.02-14.488 3.7969 3.1992-13.531 10.098-10.934 17.441 0.41016 1.1602 6.5781 3.6172 8.0039 5.0898 1.4258 1.4766 1.9727-6.9414 9.6133-9.2812 2.5195-0.76953-6.3789 10.668-6.3789 10.668s11.445 1.5273 17.84 15.77c0 0 2.6836-14.68 5.625-17.773 1.3555-1.4258-9.7344-6.1484-8.1992-7.7539 2.4688-2.5742 10.492 4.3477 10.609 4.5938 0.11719 0.24609-0.89844-8.3398 3.4961-13.465 0.59375-0.6875-6.0547-5.9023-9.9492-7.6016-3.8945-1.6992-9.5234-1.0117-9.2578-2.5781 0.26953-1.5664 7.7422-0.71094 10.066 1.082 2.3242 1.7891 7.7891 6.8398 8.9688 5.1055 1.1797-1.7305-0.67578-10.352 0.65625-17.016 0.53125-2.6484-14.57-7.082-20.715-3.2617-0.70703 0.44141-2.7148-0.10938-2.3438-0.70703s4.1641-3.4297 7.9648-3.0625c3.7969 0.36719 12.629-0.44141 14.938 2.3125 2.3086 2.7578-6.6094-26.516-23.039-18.82-5.9688 2.8008-5.3867 10.902-10.078 16.859z" />
+                            </svg>
+                            <span>Plants</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <svg width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m46.625 29.293s-33.18-20.887-28.656 15.805c0.40234 3.25 15.488-13.707 23.902-6.2266 3.25 2.8945-14.289 2.1641-18.453 5.4766-4.1641 3.3086-7.7422 8.5859 12.301 21.832 1.3125 0.86719 8.9023-18.805 14.02-14.488 3.7969 3.1992-13.531 10.098-10.934 17.441 0.41016 1.1602 6.5781 3.6172 8.0039 5.0898 1.4258 1.4766 1.9727-6.9414 9.6133-9.2812 2.5195-0.76953-6.3789 10.668-6.3789 10.668s11.445 1.5273 17.84 15.77c0 0 2.6836-14.68 5.625-17.773 1.3555-1.4258-9.7344-6.1484-8.1992-7.7539 2.4688-2.5742 10.492 4.3477 10.609 4.5938 0.11719 0.24609-0.89844-8.3398 3.4961-13.465 0.59375-0.6875-6.0547-5.9023-9.9492-7.6016-3.8945-1.6992-9.5234-1.0117-9.2578-2.5781 0.26953-1.5664 7.7422-0.71094 10.066 1.082 2.3242 1.7891 7.7891 6.8398 8.9688 5.1055 1.1797-1.7305-0.67578-10.352 0.65625-17.016 0.53125-2.6484-14.57-7.082-20.715-3.2617-0.70703 0.44141-2.7148-0.10938-2.3438-0.70703s4.1641-3.4297 7.9648-3.0625c3.7969 0.36719 12.629-0.44141 14.938 2.3125 2.3086 2.7578-6.6094-26.516-23.039-18.82-5.9688 2.8008-5.3867 10.902-10.078 16.859z" />
+                            </svg>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- 
+                Background Photo by <a href="https://unsplash.com/@element5digital?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Element5 Digital</a> on <a href="https://unsplash.com/photos/z6i_UCBuu5Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> 
+            -->
+        </header>
+
+        <main>
+            <h2>Welcome to Houseplant Hub!</h2>
+            <p>Our plants are green and stuff. You know, like plants. It's pretty great. Do you like plants? They enjoy music and sunlight. Probably not long walks on the beach though. Don't let your pets eat houseplants, they tend to be poisonous. I mean that the houseplants are poisonous, not your pets. Yikes.</p>
+
+            <section id="plants">
+                <h3>Our Plants</h3>
+                <p>Below you can find a small selection of the plants we offer. Be sure to stop by to view our full selection at our brick and mortar location in Tempe, Arizona. We also offer classes, parties, and plant-sitting services.</p>
+
+                <section>
+                    <h4>Scary Boi</h4>
+                    <img src="images/monstera-leaves.jpeg" alt="close up of dark green monstera leaves against a white background">
+                    <!-- 
+                        Photo by <a href="https://unsplash.com/@karaeads?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kara Eads</a> on <a href="https://unsplash.com/photos/zcVArTF8Frs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> 
+                    -->
+                    <p>The monstera plant isn't really scary, unless your ceilings are low, I guess. They can grow to be 10 to 15 feet tall and 8 feet wide! It's like Little Shop of Horrors. Yikes again.</p>
+                    <p class="price">$20 - $100</p>
+                </section>
+
+                <section>
+                    <h4>Pokey Boi</h4>
+                    <img src="images/cactus.jpg" alt="Close up of potted dark green succulent with pointy tips">
+                    <!-- 
+                        Photo by <a href="https://unsplash.com/@kyawthutun?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kyaw Tun</a> on <a href="https://unsplash.com/photos/ntOxPce8R5c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> 
+                    -->
+                    <p>There are many types of poke-y bois, especially here in the wilds of Arizona. I suggest avoiding the ones that jump at you. They're not the best.</p>
+                    <p class="price">$10 - $100</p>
+                </section>
+
+                <section>
+                    <h4>Sturdy Boi</h4>
+                    <img src="images/pothos.jpg" alt="a light to medium-green variegated pothos plant in a white pot">
+                    <!-- 
+                        Image from: https://www.envirogardening.com/hydroponic-golden-pothos-live-plants-growing-kit-with-white-ceramic-pot/p874098 
+                    -->
+                    <p>The pothos plant will probably be around and thriving a million years from now. These things are like cockroaches. If you aren't the best with plants, this or a fake plant is best.</p>
+                    <p class="price">$10 - $50</p>
+                </section>
+            </section>
+
+            <section id="contact">
+                <h3>Contact or Visit the Houseplant Hub!</h3>
+                <p>Houseplant Hub is here to help! There are many ways to get in touch with our plant experts, no matter how much you may or may not hate making phone calls. Our location, phone number, and email information can all be found below.</p>
+
+                <div>
+                    <section>
+                        <h4>Our Location</h4>
+                        <address>
+                            1234 Rural Road<br>
+                            Springfield, Somewhere 12345
+                            <a href="mailto:#">contact@houseplant-hub.com</a>
+                            <a href="tel:#">1-800-buy-plants</a>
+                        </address>
+                    </section>
+
+                    <table>
+                        <caption>Hours of Operation</caption>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>Closed</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday - Thursday</td>
+                                <td>10:00 A.M. - 9:00 P.M.</td>
+                            </tr>
+                            <tr>
+                                <td>Friday - Saturday</td>
+                                <td>10:00 A.M. - Midnight</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>Noon - 6:00 P.M.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <section id="social">
+                        <h4>Find Us on Social Media</h4>
+                        <ul>
+                            <li>
+                                <a href="#" aria-label="Facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                        <path d="M16.5 7.5l0 .01" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="YouTube">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+                                        <path d="M10 9l5 3l-5 3z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div> 
+
+                <section>
+                    <h4>Send Us a Message</h4>
+                    <p>Have questions? Want to plan a plant party? You're in the right place! Send us an email through the form below and we will get back to you within 48 hours. Required fields marked with a leaf (<span class="required"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-leaf" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 21c.5 -4.5 2.5 -8 7 -10" />
+                        <path d="M9 18c6.218 0 10.5 -3.288 11 -12v-2h-4.014c-9 0 -11.986 4 -12 9c0 1 0 3 2 5h3z" />
+                    </svg></span>).</p>
+                    <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                        <label for="f-name">Full Name<span class="required"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-leaf" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 21c.5 -4.5 2.5 -8 7 -10" />
+                            <path d="M9 18c6.218 0 10.5 -3.288 11 -12v-2h-4.014c-9 0 -11.986 4 -12 9c0 1 0 3 2 5h3z" />
+                        </svg></span></label>
+                        <input type="text" name="f-name" id="f-name" required>
+
+                        <label for="email">Email Address<span class="required"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-leaf" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 21c.5 -4.5 2.5 -8 7 -10" />
+                            <path d="M9 18c6.218 0 10.5 -3.288 11 -12v-2h-4.014c-9 0 -11.986 4 -12 9c0 1 0 3 2 5h3z" />
+                        </svg></span></label>
+                        <input type="email" name="email" id="email" required>
+                        
+                        <label for="comments">Comments<span class="required"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-leaf" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 21c.5 -4.5 2.5 -8 7 -10" />
+                            <path d="M9 18c6.218 0 10.5 -3.288 11 -12v-2h-4.014c-9 0 -11.986 4 -12 9c0 1 0 3 2 5h3z" />
+                        </svg></span></label>
+                        <textarea name="comments" id="comments" required></textarea>
+
+                        <input type="submit" name="feedback" id="feedback" value="Send Message">
+                    </form>
+                </section>
+            </section>
+        </main>
+
+        <div id="plant-row">
+            <!-- 
+                Photo by <a href="https://unsplash.com/@anniespratt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Annie Spratt</a> on <a href="https://unsplash.com/photos/S7viz8JWxwY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> 
+            -->
+        </div>
+
+        <a href="#top" aria-label="back to top of page" id="btt">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-up" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 20v-8h-3.586a1 1 0 0 1 -.707 -1.707l6.586 -6.586a1 1 0 0 1 1.414 0l6.586 6.586a1 1 0 0 1 -.707 1.707h-3.586v8a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+            </svg>
+        </a>
+
+        <footer>
+            <p>Copyright &copy; 2023 - GIT215 - Prof. Barnett</p>
+            <p>For Educational Purposes Only</p>
+        </footer>
+    </body>
+</html>
