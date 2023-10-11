@@ -245,6 +245,7 @@ p{
     /* Styles were added here to arrange the content, I used a property for a flexbox child to change the order that the content appears on the page */
     /* TO DO */
     width: 100%;
+    max-width: 400px;
     height: auto;
 }
 
